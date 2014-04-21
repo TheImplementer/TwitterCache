@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/holo_blue_dark"
+    tools:context="com.github.theimplementer.twittercache.LoginFragment">
+
+    <EditText
+        android:background="@drawable/login_edit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:hint="@string/login_username" />
+
+    <EditText
+        android:background="@drawable/login_edit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="5dp"
+        android:inputType="textPassword"
+        android:hint="@string/login_password" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:background="@drawable/login_button"
+        android:layout_marginTop="16dp"
+        android:text="@string/login_text" />
+
+</LinearLayout>
