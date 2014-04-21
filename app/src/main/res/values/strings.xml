@@ -5,6 +5,9 @@
     <string name="login_text">Login</string>
     <string name="login_username">Username</string>
     <string name="login_password">Password</string>
-    <string name="login_label">Login</string>
+    <string name="login_activity_title">Login</string>
+    <string name="connection_error">An internet connection is required by the application.</string>
+    <string name="ok">OK</string>
+    <string name="connection_error_title">Error</string>
 
 </resources>

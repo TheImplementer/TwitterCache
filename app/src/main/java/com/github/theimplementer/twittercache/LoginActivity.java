@@ -13,6 +13,7 @@ public class LoginActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        setTitle(R.string.login_activity_title);
 
         final FragmentManager fragmentManager = getFragmentManager();
         final Fragment fragment = fragmentManager.findFragmentById(R.id.container);

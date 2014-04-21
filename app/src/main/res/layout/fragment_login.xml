@@ -29,6 +29,7 @@
         android:textColor="@android:color/white"
         android:background="@drawable/login_button"
         android:layout_marginTop="16dp"
-        android:text="@string/login_text" />
+        android:text="@string/login_text"
+        android:id="@+id/login_button"/>
 
 </LinearLayout>
