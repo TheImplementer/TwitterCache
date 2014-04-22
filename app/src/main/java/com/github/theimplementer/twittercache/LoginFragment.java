@@ -7,19 +7,26 @@ import android.content.DialogInterface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+
+import twitter4j.TwitterException;
 
 import static android.content.Context.CONNECTIVITY_SERVICE;
 
 
 public class LoginFragment extends Fragment {
 
+    private static final String TAG = "LoginFragment";
+
     private Button loginButton;
+    private TwitterLoginHandler twitterLoginHandler;
 
     public LoginFragment() {
+        twitterLoginHandler = new TwitterLoginHandler(new TwitterSharedPreferences(getActivity()));
     }
 
     public static Fragment newInstance() {
@@ -41,7 +48,14 @@ public class LoginFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 if (!isConnected()) {
-                    displayConnectivityError();
+                    displayErrorDialog(R.string.connection_error);
+                    return;
+                }
+                try {
+                    twitterLoginHandler.login();
+                } catch (TwitterException ex) {
+                    displayErrorDialog(R.string.login_error);
+                    Log.d(TAG, ex.getErrorMessage());
                     return;
                 }
             }
@@ -50,15 +64,14 @@ public class LoginFragment extends Fragment {
         return view;
     }
 
-    private void displayConnectivityError() {
+    private void displayErrorDialog(int message) {
         final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getActivity());
         final AlertDialog alertDialog = dialogBuilder.
-                setMessage(R.string.connection_error).
+                setMessage(message).
                 setTitle(R.string.connection_error_title).
                 setNeutralButton(R.string.ok, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.dismiss();
                     }
                 }).create();
         alertDialog.show();

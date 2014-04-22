@@ -7,5 +7,6 @@
     <string name="connection_error">An internet connection is required by the application.</string>
     <string name="ok">OK</string>
     <string name="connection_error_title">Error</string>
+    <string name="login_error">An error occurred during the login process.</string>
 
 </resources>

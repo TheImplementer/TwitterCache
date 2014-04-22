@@ -9,6 +9,9 @@ import static android.content.SharedPreferences.Editor;
 public class TwitterSharedPreferences implements TwitterPreferences {
     private static final String TCACHE_SHARED_KEY = "tcache_shared";
     private static final String USER_LOGGED_IN = "user_logged_in";
+    private static final String TWITTER_ACCESS_TOKEN = "access_token";
+    private static final String TWITTER_ACCESS_TOKEN_SECRET = "access_token_secret";
+
 
     private final SharedPreferences sharedPreferences;
 
@@ -26,5 +29,29 @@ public class TwitterSharedPreferences implements TwitterPreferences {
     @Override
     public boolean isUserLoggedIn() {
         return sharedPreferences.getBoolean(USER_LOGGED_IN, false);
+    }
+
+    @Override
+    public void setAccessToken(String accessToken) {
+        final Editor editor = sharedPreferences.edit();
+        editor.putString(TWITTER_ACCESS_TOKEN, accessToken);
+        editor.commit();
+    }
+
+    @Override
+    public String getAccessToken() {
+        return sharedPreferences.getString(TWITTER_ACCESS_TOKEN, null);
+    }
+
+    @Override
+    public void setAccessTokenSecret(String accessTokenSecret) {
+        final Editor editor = sharedPreferences.edit();
+        editor.putString(TWITTER_ACCESS_TOKEN_SECRET, accessTokenSecret);
+        editor.commit();
+    }
+
+    @Override
+    public String getAccessTokenString() {
+        return sharedPreferences.getString(TWITTER_ACCESS_TOKEN_SECRET, null);
     }
 }
