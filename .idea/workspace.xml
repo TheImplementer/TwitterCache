@@ -22,10 +22,11 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.github.theimplementer.twittercache" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3499fbe1-6f80-4b72-b14d-908dac64c834" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/twitter4j_core_4_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+    <list default="true" id="3499fbe1-6f80-4b72-b14d-908dac64c834" name="Default" comment="added class to handle twitter's login process">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/TwitterLoginHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/TwitterPreferences.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/TwitterSharedPreferences.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/LoginFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/LoginFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TwitterCache.iws" />
@@ -89,24 +90,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LoginActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LoginActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2039135" vertical-offset="0" max-vertical-offset="971">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
               <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
               <folding>
                 <element signature="e#439#468#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="306">
-              <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -134,11 +125,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginFragment.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="LoginFragment.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/LoginFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.16" vertical-offset="0" max-vertical-offset="972">
-              <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.22245108" vertical-offset="0" max-vertical-offset="1098">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="e#592#593#0" expanded="true" />
+                <element signature="e#634#635#0" expanded="true" />
+                <element signature="e#703#704#0" expanded="true" />
+                <element signature="e#753#754#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TwitterPreferences.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/TwitterPreferences.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
+              <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TwitterSharedPreferences.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/TwitterSharedPreferences.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#944#945#0" expanded="true" />
+                <element signature="e#1018#1019#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TwitterLoginHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/TwitterLoginHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -848,8 +878,12 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/LoginFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/TwitterLoginHandler.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/Preferences.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/LoginFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/TwitterPreferences.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/TwitterSharedPreferences.java" />
       </list>
     </option>
   </component>
@@ -958,7 +992,55 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twittercache" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TwitterCache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TwitterCache" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TwitterCache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TwitterCache" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -987,6 +1069,7 @@
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
+    <property name="LayoutCode.rearrangeEntriesJava" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -994,6 +1077,9 @@
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable-mdpi" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.github.theimplementer.twittercache" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app" />
@@ -1171,7 +1257,11 @@
       <created>1398153017568</created>
       <updated>1398153017568</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="imported twitter4j-core library">
+      <created>1398153974012</created>
+      <updated>1398153974012</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1199,7 +1289,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24919957" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24919957" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1224,7 +1314,9 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="added &quot;INTERNET&quot; permission in manifest" />
-    <option name="LAST_COMMIT_MESSAGE" value="added &quot;INTERNET&quot; permission in manifest" />
+    <MESSAGE value="imported twitter4j-core library" />
+    <MESSAGE value="added class to handle twitter login process" />
+    <option name="LAST_COMMIT_MESSAGE" value="added class to handle twitter login process" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1271,7 +1363,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1332">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#703#704#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1326,7 +1423,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1332">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#703#704#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1381,7 +1483,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1332">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#703#704#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1409,7 +1516,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="450">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#703#704#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1454,7 +1566,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="558">
           <caret line="18" column="75" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
-          <folding />
+          <folding>
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#703#704#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1559,14 +1676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/LoginFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.16" vertical-offset="0" max-vertical-offset="972">
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
@@ -1577,10 +1686,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2039135" vertical-offset="0" max-vertical-offset="971">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
           <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
           <folding>
             <element signature="e#439#468#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/TwitterLoginHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/android-sdk-linux/sources/android-19/android/content/Context.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25952625" vertical-offset="0" max-vertical-offset="51948">
+          <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/android-sdk-linux/sources/android-19/android/content/SharedPreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33264676" vertical-offset="5347" max-vertical-offset="6516">
+          <caret line="330" column="12" selection-start-line="330" selection-start-column="12" selection-end-line="330" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/TwitterSharedPreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#1018#1019#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/TwitterPreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
+          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/LoginFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22245108" vertical-offset="0" max-vertical-offset="1098">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#703#704#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
           </folding>
         </state>
       </provider>

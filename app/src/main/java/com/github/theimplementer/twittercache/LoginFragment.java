@@ -3,7 +3,6 @@ package com.github.theimplementer.twittercache;
 
 import android.app.AlertDialog;
 import android.app.Fragment;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -25,6 +24,11 @@ public class LoginFragment extends Fragment {
 
     public static Fragment newInstance() {
         return new LoginFragment();
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
     }
 
     @Override
