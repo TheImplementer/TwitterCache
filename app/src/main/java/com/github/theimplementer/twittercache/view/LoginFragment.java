@@ -31,7 +31,6 @@ public class LoginFragment extends Fragment {
     private TwitterLoginHandler twitterLoginHandler;
 
     public LoginFragment() {
-        twitterLoginHandler = new TwitterLoginHandler(new TwitterSharedPreferences(getActivity()));
     }
 
     public static Fragment newInstance() {
@@ -41,6 +40,7 @@ public class LoginFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        twitterLoginHandler = new TwitterLoginHandler(new TwitterSharedPreferences(getActivity()));
     }
 
     @Override
