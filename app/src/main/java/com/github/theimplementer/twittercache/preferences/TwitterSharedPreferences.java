@@ -1,4 +1,4 @@
-package com.github.theimplementer.twittercache;
+package com.github.theimplementer.twittercache.preferences;
 
 import android.content.Context;
 import android.content.SharedPreferences;

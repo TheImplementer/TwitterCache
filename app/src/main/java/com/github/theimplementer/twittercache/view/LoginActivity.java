@@ -1,10 +1,12 @@
-package com.github.theimplementer.twittercache;
+package com.github.theimplementer.twittercache.view;
 
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
+
+import com.github.theimplementer.twittercache.R;
 
 
 public class LoginActivity extends Activity {

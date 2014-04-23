@@ -1,4 +1,4 @@
-package com.github.theimplementer.twittercache;
+package com.github.theimplementer.twittercache.view;
 
 
 import android.app.AlertDialog;
@@ -12,6 +12,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+
+import com.github.theimplementer.twittercache.R;
+import com.github.theimplementer.twittercache.auth.TwitterLoginHandler;
+import com.github.theimplementer.twittercache.preferences.TwitterSharedPreferences;
 
 import twitter4j.TwitterException;
 

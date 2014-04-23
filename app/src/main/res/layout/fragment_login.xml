@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="#55ACEE"
-    tools:context="com.github.theimplementer.twittercache.LoginFragment">
+    tools:context="com.github.theimplementer.twittercache.view.LoginFragment">
 
     <Button
         android:layout_width="wrap_content"
