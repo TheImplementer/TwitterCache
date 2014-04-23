@@ -4,6 +4,7 @@ package com.github.theimplementer.twittercache.view;
 import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -62,6 +63,7 @@ public class LoginFragment extends Fragment {
                     Log.d(TAG, ex.getErrorMessage());
                     return;
                 }
+                startActivity(new Intent(getActivity(), MainActivity.class));
             }
         });
 
