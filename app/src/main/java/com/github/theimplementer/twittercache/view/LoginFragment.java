@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.github.theimplementer.twittercache.R;
+import com.github.theimplementer.twittercache.auth.RemoteTwitterLoginHandler;
 import com.github.theimplementer.twittercache.auth.TwitterLoginHandler;
 import com.github.theimplementer.twittercache.preferences.TwitterSharedPreferences;
 
@@ -40,7 +41,7 @@ public class LoginFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        twitterLoginHandler = new TwitterLoginHandler(new TwitterSharedPreferences(getActivity()));
+        twitterLoginHandler = new RemoteTwitterLoginHandler(new TwitterSharedPreferences(getActivity()));
     }
 
     @Override
