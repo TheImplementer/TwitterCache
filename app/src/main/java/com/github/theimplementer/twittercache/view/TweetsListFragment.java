@@ -25,4 +25,9 @@ public class TweetsListFragment extends ListFragment {
         setListAdapter(adapter);
         return super.onCreateView(inflater, container, savedInstanceState);
     }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+    }
 }
