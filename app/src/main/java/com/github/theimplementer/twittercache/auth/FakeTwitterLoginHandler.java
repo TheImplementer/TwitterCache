@@ -1,11 +1,11 @@
 package com.github.theimplementer.twittercache.auth;
 
-import twitter4j.TwitterException;
+import android.os.AsyncTask;
 
-public class FakeTwitterLoginHandler implements TwitterLoginHandler {
+public class FakeTwitterLoginHandler extends AsyncTask<Void, Void, LoginResult> {
 
     @Override
-    public void login() throws TwitterException {
-
+    protected LoginResult doInBackground(Void... voids) {
+        return LoginResult.SUCCESS;
     }
 }

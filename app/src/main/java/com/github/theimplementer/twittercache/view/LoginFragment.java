@@ -6,31 +6,26 @@ import android.app.Fragment;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
+import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.github.theimplementer.twittercache.R;
-import com.github.theimplementer.twittercache.auth.OfflineDeviceException;
+import com.github.theimplementer.twittercache.auth.LoginObserver;
+import com.github.theimplementer.twittercache.auth.LoginResult;
 import com.github.theimplementer.twittercache.auth.RemoteTwitterLoginHandler;
-import com.github.theimplementer.twittercache.auth.TwitterLoginHandler;
 import com.github.theimplementer.twittercache.preferences.TwitterSharedPreferences;
-
-import twitter4j.TwitterException;
 
 import static android.content.Context.CONNECTIVITY_SERVICE;
 
 
-public class LoginFragment extends Fragment {
-
-    private static final String TAG = "LoginFragment";
+public class LoginFragment extends Fragment implements LoginObserver {
 
     private Button loginButton;
-    private TwitterLoginHandler twitterLoginHandler;
+    private AsyncTask<Void, Void, LoginResult> twitterLoginHandler;
 
     public LoginFragment() {
     }
@@ -43,7 +38,7 @@ public class LoginFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         final ConnectivityManager connectivityManager = (ConnectivityManager) getActivity().getSystemService(CONNECTIVITY_SERVICE);
-        twitterLoginHandler = new RemoteTwitterLoginHandler(new TwitterSharedPreferences(getActivity()), connectivityManager);
+        twitterLoginHandler = new RemoteTwitterLoginHandler(new TwitterSharedPreferences(getActivity()), connectivityManager, this);
     }
 
     @Override
@@ -55,21 +50,23 @@ public class LoginFragment extends Fragment {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                try {
-                    twitterLoginHandler.login();
-                } catch (OfflineDeviceException ex) {
-                    displayErrorDialog(R.string.connection_error);
-                    return;
-                } catch (TwitterException ex) {
-                    displayErrorDialog(R.string.login_error);
-                    Log.d(TAG, ex.getErrorMessage());
-                    return;
-                }
-                startActivity(new Intent(getActivity(), MainActivity.class));
+                twitterLoginHandler.execute();
+
             }
         });
 
         return view;
+    }
+
+    @Override
+    public void notifySuccess() {
+        startActivity(new Intent(getActivity(), MainActivity.class));
+    }
+
+    @Override
+    public void notifyFailure() {
+        displayErrorDialog(R.string.login_error);
+        return;
     }
 
     private void displayErrorDialog(int message) {
@@ -84,5 +81,4 @@ public class LoginFragment extends Fragment {
                 }).create();
         alertDialog.show();
     }
-
 }
