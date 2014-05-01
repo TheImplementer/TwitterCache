@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.github.theimplementer.twittercache.R;
+import com.github.theimplementer.twittercache.auth.OfflineDeviceException;
 import com.github.theimplementer.twittercache.auth.RemoteTwitterLoginHandler;
 import com.github.theimplementer.twittercache.auth.TwitterLoginHandler;
 import com.github.theimplementer.twittercache.preferences.TwitterSharedPreferences;
@@ -41,7 +42,8 @@ public class LoginFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        twitterLoginHandler = new RemoteTwitterLoginHandler(new TwitterSharedPreferences(getActivity()));
+        final ConnectivityManager connectivityManager = (ConnectivityManager) getActivity().getSystemService(CONNECTIVITY_SERVICE);
+        twitterLoginHandler = new RemoteTwitterLoginHandler(new TwitterSharedPreferences(getActivity()), connectivityManager);
     }
 
     @Override
@@ -53,12 +55,11 @@ public class LoginFragment extends Fragment {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!isConnected()) {
-                    displayErrorDialog(R.string.connection_error);
-                    return;
-                }
                 try {
                     twitterLoginHandler.login();
+                } catch (OfflineDeviceException ex) {
+                    displayErrorDialog(R.string.connection_error);
+                    return;
                 } catch (TwitterException ex) {
                     displayErrorDialog(R.string.login_error);
                     Log.d(TAG, ex.getErrorMessage());
@@ -84,9 +85,4 @@ public class LoginFragment extends Fragment {
         alertDialog.show();
     }
 
-    private boolean isConnected() {
-        final ConnectivityManager connectivityManager = (ConnectivityManager) getActivity().getSystemService(CONNECTIVITY_SERVICE);
-        final NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-        return activeNetworkInfo != null && activeNetworkInfo.isConnectedOrConnecting();
-    }
 }

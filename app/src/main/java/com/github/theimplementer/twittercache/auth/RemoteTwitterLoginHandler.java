@@ -1,5 +1,8 @@
 package com.github.theimplementer.twittercache.auth;
 
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+
 import com.github.theimplementer.twittercache.preferences.TwitterPreferences;
 
 import twitter4j.Twitter;
@@ -16,13 +19,17 @@ public class RemoteTwitterLoginHandler implements TwitterLoginHandler {
     private static final String TWITTER_CALLBACK_URL = "oauth://tcache";
 
     private TwitterPreferences twitterPreferences;
+    private ConnectivityManager connectivityManager;
 
-    public RemoteTwitterLoginHandler(TwitterPreferences twitterPreferences) {
+    public RemoteTwitterLoginHandler(TwitterPreferences twitterPreferences, ConnectivityManager connectivityManager) {
         this.twitterPreferences = twitterPreferences;
+        this.connectivityManager = connectivityManager;
     }
 
     @Override
     public void login() throws TwitterException {
+        if (!isConnected()) throw new OfflineDeviceException();
+
         if (twitterPreferences.isUserLoggedIn()) {
             return;
         }
@@ -39,4 +46,8 @@ public class RemoteTwitterLoginHandler implements TwitterLoginHandler {
         twitterPreferences.setAccessTokenSecret(requestToken.getTokenSecret());
     }
 
+    private boolean isConnected() {
+        final NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnectedOrConnecting();
+    }
 }
