@@ -19,7 +19,7 @@ public class MainActivity extends Activity {
         final Fragment container = fragmentManager.findFragmentById(R.id.tweet_list_container);
         if (container == null) {
             final FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.add(R.id.tweet_list_container, TweetsListFragment.newInstance());
+            fragmentTransaction.add(R.id.tweet_list_container, TweetListFragment.newInstance());
             fragmentTransaction.commit();
         }
     }

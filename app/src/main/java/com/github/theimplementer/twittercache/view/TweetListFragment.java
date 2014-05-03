@@ -14,14 +14,19 @@ import android.widget.ArrayAdapter;
 
 import com.github.theimplementer.twittercache.R;
 
-public class TweetsListFragment extends ListFragment {
+import java.util.List;
 
+public class TweetListFragment extends ListFragment implements Updatable<String> {
 
-    public TweetsListFragment() {
+    private ArrayAdapter<String> tweetsAdapter;
+    private TweetsFetcher tweetsFetcher;
+
+    public TweetListFragment() {
+        this.tweetsFetcher = new FakeTweetsFetcher(this);
     }
 
     public static Fragment newInstance() {
-        return new TweetsListFragment();
+        return new TweetListFragment();
     }
 
     @Override
@@ -32,14 +37,15 @@ public class TweetsListFragment extends ListFragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1);
-        setListAdapter(adapter);
+        tweetsAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1);
+        setListAdapter(tweetsAdapter);
         return super.onCreateView(inflater, container, savedInstanceState);
     }
 
     @Override
     public void onStart() {
         super.onStart();
+        tweetsFetcher.fetch();
     }
 
     @Override
@@ -55,5 +61,10 @@ public class TweetsListFragment extends ListFragment {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    public void add(List<String> tweets) {
+        tweetsAdapter.addAll(tweets);
+        tweetsAdapter.notifyDataSetChanged();
     }
 }

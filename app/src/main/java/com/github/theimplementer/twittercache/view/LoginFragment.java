@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.github.theimplementer.twittercache.R;
+import com.github.theimplementer.twittercache.auth.FakeLoginHandler;
 import com.github.theimplementer.twittercache.auth.LoginHandler;
 import com.github.theimplementer.twittercache.auth.LoginObserver;
 import com.github.theimplementer.twittercache.auth.RemoteLoginHandler;
@@ -37,7 +38,8 @@ public class LoginFragment extends Fragment implements LoginObserver {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         final ConnectivityManager connectivityManager = (ConnectivityManager) getActivity().getSystemService(CONNECTIVITY_SERVICE);
-        loginHandler = new RemoteLoginHandler(new TwitterSharedPreferences(getActivity()), connectivityManager, this);
+//        loginHandler = new RemoteLoginHandler(new TwitterSharedPreferences(getActivity()), connectivityManager, this);
+        this.loginHandler = new FakeLoginHandler(this);
     }
 
     @Override
