@@ -6,7 +6,6 @@ import android.app.Fragment;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.ConnectivityManager;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,9 +13,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.github.theimplementer.twittercache.R;
+import com.github.theimplementer.twittercache.auth.LoginHandler;
 import com.github.theimplementer.twittercache.auth.LoginObserver;
-import com.github.theimplementer.twittercache.auth.LoginResult;
-import com.github.theimplementer.twittercache.auth.RemoteTwitterLoginHandler;
+import com.github.theimplementer.twittercache.auth.RemoteLoginHandler;
 import com.github.theimplementer.twittercache.preferences.TwitterSharedPreferences;
 
 import static android.content.Context.CONNECTIVITY_SERVICE;
@@ -25,7 +24,7 @@ import static android.content.Context.CONNECTIVITY_SERVICE;
 public class LoginFragment extends Fragment implements LoginObserver {
 
     private Button loginButton;
-    private AsyncTask<Void, Void, LoginResult> twitterLoginHandler;
+    private LoginHandler loginHandler;
 
     public LoginFragment() {
     }
@@ -38,7 +37,7 @@ public class LoginFragment extends Fragment implements LoginObserver {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         final ConnectivityManager connectivityManager = (ConnectivityManager) getActivity().getSystemService(CONNECTIVITY_SERVICE);
-        twitterLoginHandler = new RemoteTwitterLoginHandler(new TwitterSharedPreferences(getActivity()), connectivityManager, this);
+        loginHandler = new RemoteLoginHandler(new TwitterSharedPreferences(getActivity()), connectivityManager, this);
     }
 
     @Override
@@ -50,8 +49,7 @@ public class LoginFragment extends Fragment implements LoginObserver {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                twitterLoginHandler.execute();
-
+                loginHandler.login();
             }
         });
 

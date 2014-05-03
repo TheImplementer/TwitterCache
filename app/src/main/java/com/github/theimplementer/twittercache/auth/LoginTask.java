@@ -13,7 +13,7 @@ import twitter4j.auth.RequestToken;
 import twitter4j.conf.Configuration;
 import twitter4j.conf.ConfigurationBuilder;
 
-public class RemoteTwitterLoginHandler extends AsyncTask<Void, Void, LoginResult> {
+public class LoginTask extends AsyncTask<Void, Void, LoginResult> {
 
     private static final String TWITTER_CONSUMER_KEY = "bJ6MYWxDscwN0AC4vs6IwpoF0";
     private static final String TWITTER_CONSUMER_SECRET = "bAtwBczHSganT4ux6oCpxcMYIQpQ1gzvabVrdsWrDe0lA2mjU6";
@@ -23,9 +23,9 @@ public class RemoteTwitterLoginHandler extends AsyncTask<Void, Void, LoginResult
     private final ConnectivityManager connectivityManager;
     private final LoginObserver loginObserver;
 
-    public RemoteTwitterLoginHandler(TwitterPreferences twitterPreferences,
-                                     ConnectivityManager connectivityManager,
-                                     LoginObserver loginObserver) {
+    public LoginTask(TwitterPreferences twitterPreferences,
+                              ConnectivityManager connectivityManager,
+                              LoginObserver loginObserver) {
         this.twitterPreferences = twitterPreferences;
         this.connectivityManager = connectivityManager;
         this.loginObserver = loginObserver;
