@@ -26,6 +26,7 @@ public class LoginFragment extends Fragment implements LoginObserver {
 
     private Button loginButton;
     private LoginHandler loginHandler;
+    private TwitterSharedPreferences twitterPreferences;
 
     public LoginFragment() {
     }
@@ -38,7 +39,8 @@ public class LoginFragment extends Fragment implements LoginObserver {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         final ConnectivityManager connectivityManager = (ConnectivityManager) getActivity().getSystemService(CONNECTIVITY_SERVICE);
-        loginHandler = new RemoteLoginHandler(new TwitterSharedPreferences(getActivity()), connectivityManager, this);
+        this.twitterPreferences = new TwitterSharedPreferences(getActivity());
+        this.loginHandler = new RemoteLoginHandler(twitterPreferences, connectivityManager, this);
 //        this.loginHandler = new FakeLoginHandler(this);
     }
 
@@ -56,6 +58,14 @@ public class LoginFragment extends Fragment implements LoginObserver {
         });
 
         return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (twitterPreferences.isUserLoggedIn()) {
+            startActivity(new Intent(getActivity(), MainActivity.class));
+        }
     }
 
     @Override

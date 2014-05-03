@@ -64,7 +64,7 @@ public class LoginTask extends AsyncTask<Void, Void, LoginResult> {
 
         final Twitter twitter = new TwitterFactory(configuration).getInstance();
         final RequestToken requestToken = twitter.getOAuthRequestToken(TWITTER_CALLBACK_URL);
-        twitterPreferences.setUserLoggedIn(true);
+        twitterPreferences.setUserLoggedIn(requestToken.getToken(), requestToken.getTokenSecret());
         twitterPreferences.setAccessToken(requestToken.getToken());
         twitterPreferences.setAccessTokenSecret(requestToken.getTokenSecret());
     }

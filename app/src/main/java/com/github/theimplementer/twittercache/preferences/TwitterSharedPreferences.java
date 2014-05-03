@@ -12,7 +12,6 @@ public class TwitterSharedPreferences implements TwitterPreferences {
     private static final String TWITTER_ACCESS_TOKEN = "access_token";
     private static final String TWITTER_ACCESS_TOKEN_SECRET = "access_token_secret";
 
-
     private final SharedPreferences sharedPreferences;
 
     public TwitterSharedPreferences(Context context) {
@@ -20,10 +19,21 @@ public class TwitterSharedPreferences implements TwitterPreferences {
     }
 
     @Override
-    public void setUserLoggedIn(boolean loggedIn) {
-        final Editor preferencesEditor = sharedPreferences.edit();
-        preferencesEditor.putBoolean(USER_LOGGED_IN, loggedIn);
-        preferencesEditor.commit();
+    public void setUserLoggedIn(String accessToken, String accessTokenSecret) {
+        final Editor editor = sharedPreferences.edit();
+        editor.putBoolean(USER_LOGGED_IN, true);
+        editor.putString(TWITTER_ACCESS_TOKEN, accessToken);
+        editor.putString(TWITTER_ACCESS_TOKEN_SECRET, accessTokenSecret);
+        editor.commit();
+    }
+
+    @Override
+    public void setUserLoggedOut() {
+        final Editor editor = sharedPreferences.edit();
+        editor.putBoolean(USER_LOGGED_IN, false);
+        editor.remove(TWITTER_ACCESS_TOKEN);
+        editor.remove(TWITTER_ACCESS_TOKEN_SECRET);
+        editor.commit();
     }
 
     @Override

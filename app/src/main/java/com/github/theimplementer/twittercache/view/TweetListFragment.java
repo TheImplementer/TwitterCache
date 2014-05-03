@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.github.theimplementer.twittercache.R;
+import com.github.theimplementer.twittercache.preferences.TwitterSharedPreferences;
 
 import java.util.List;
 
@@ -21,6 +22,7 @@ public class TweetListFragment extends ListFragment implements Updatable<Status>
 
     private TweetsAdapter tweetsAdapter;
     private TweetsFetcher tweetsFetcher;
+    private TwitterSharedPreferences twitterPreferences;
 
     public TweetListFragment() {
         this.tweetsFetcher = new FakeTweetsFetcher(this);
@@ -34,6 +36,7 @@ public class TweetListFragment extends ListFragment implements Updatable<Status>
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
+        twitterPreferences = new TwitterSharedPreferences(getActivity());
     }
 
     @Override
@@ -58,6 +61,8 @@ public class TweetListFragment extends ListFragment implements Updatable<Status>
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.logout:
+                twitterPreferences.setUserLoggedOut();
+                getActivity().finish();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
