@@ -38,8 +38,8 @@ public class LoginFragment extends Fragment implements LoginObserver {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         final ConnectivityManager connectivityManager = (ConnectivityManager) getActivity().getSystemService(CONNECTIVITY_SERVICE);
-//        loginHandler = new RemoteLoginHandler(new TwitterSharedPreferences(getActivity()), connectivityManager, this);
-        this.loginHandler = new FakeLoginHandler(this);
+        loginHandler = new RemoteLoginHandler(new TwitterSharedPreferences(getActivity()), connectivityManager, this);
+//        this.loginHandler = new FakeLoginHandler(this);
     }
 
     @Override

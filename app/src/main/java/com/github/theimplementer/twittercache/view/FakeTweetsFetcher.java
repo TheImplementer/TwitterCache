@@ -1,21 +1,39 @@
 package com.github.theimplementer.twittercache.view;
 
+import java.util.LinkedList;
 import java.util.List;
 
-import static java.util.Arrays.asList;
+import twitter4j.Status;
+import twitter4j.TwitterException;
+
+import static java.lang.String.format;
+import static twitter4j.TwitterObjectFactory.createStatus;
 
 public class FakeTweetsFetcher implements TweetsFetcher {
 
-    private static final List<String> FAKE_TWEETS = asList("Tweet 1", "Tweet 2", "Tweet 3", "Tweet 4", "Tweet 5");
+    private static final List<Status> FAKE_TWEETS = fakeTweets();
 
-    private final Updatable<String> updatable;
+    private final Updatable<Status> updatable;
 
-    public FakeTweetsFetcher(Updatable<String> updatable) {
+    public FakeTweetsFetcher(Updatable<Status> updatable) {
         this.updatable = updatable;
     }
 
     @Override
     public void fetch() {
         updatable.add(FAKE_TWEETS);
+    }
+
+    private static final List<Status> fakeTweets() {
+        final List<Status> fakeTweets = new LinkedList<Status>();
+        for (int count = 0; count < 5; count++) {
+            try {
+                final Status tweet = createStatus(format("{ text: \"Tweet %s\" }", count));
+                fakeTweets.add(tweet);
+            } catch (TwitterException e) {
+                e.printStackTrace();
+            }
+        }
+        return fakeTweets;
     }
 }

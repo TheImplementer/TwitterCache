@@ -10,15 +10,16 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 
 import com.github.theimplementer.twittercache.R;
 
 import java.util.List;
 
-public class TweetListFragment extends ListFragment implements Updatable<String> {
+import twitter4j.Status;
 
-    private ArrayAdapter<String> tweetsAdapter;
+public class TweetListFragment extends ListFragment implements Updatable<Status> {
+
+    private TweetsAdapter tweetsAdapter;
     private TweetsFetcher tweetsFetcher;
 
     public TweetListFragment() {
@@ -37,7 +38,7 @@ public class TweetListFragment extends ListFragment implements Updatable<String>
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        tweetsAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1);
+        tweetsAdapter = new TweetsAdapter(getActivity(), android.R.layout.simple_list_item_1);
         setListAdapter(tweetsAdapter);
         return super.onCreateView(inflater, container, savedInstanceState);
     }
@@ -63,7 +64,7 @@ public class TweetListFragment extends ListFragment implements Updatable<String>
         }
     }
 
-    public void add(List<String> tweets) {
+    public void add(List<Status> tweets) {
         tweetsAdapter.addAll(tweets);
         tweetsAdapter.notifyDataSetChanged();
     }
