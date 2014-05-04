@@ -61,7 +61,7 @@ public class TwitterSharedPreferences implements TwitterPreferences {
     }
 
     @Override
-    public String getAccessTokenString() {
+    public String getAccessTokenSecret() {
         return sharedPreferences.getString(TWITTER_ACCESS_TOKEN_SECRET, null);
     }
 }

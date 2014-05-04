@@ -3,6 +3,7 @@ package com.github.theimplementer.twittercache.auth;
 import twitter4j.Twitter;
 import twitter4j.TwitterException;
 import twitter4j.TwitterFactory;
+import twitter4j.auth.AccessToken;
 import twitter4j.auth.RequestToken;
 import twitter4j.conf.Configuration;
 import twitter4j.conf.ConfigurationBuilder;
@@ -16,7 +17,8 @@ public class TwitterInstance {
 
     private static TwitterInstance instance;
 
-    private final Twitter twitter;
+    private Twitter twitter;
+    private TwitterFactory twitterFactory;
 
     private RequestToken requestToken = null;
 
@@ -25,7 +27,8 @@ public class TwitterInstance {
                 setOAuthConsumerKey(TWITTER_CONSUMER_KEY).
                 setOAuthConsumerSecret(TWITTER_CONSUMER_SECRET).
                 build();
-        twitter = new TwitterFactory(configuration).getInstance();
+        this.twitterFactory = new TwitterFactory(configuration);
+        this.twitter = twitterFactory.getInstance();
     }
 
     public static TwitterInstance getInstance() {
@@ -48,5 +51,9 @@ public class TwitterInstance {
             }
         }
         return requestToken;
+    }
+
+    public void setAccessToken(AccessToken accessToken) {
+        this.twitter = twitterFactory.getInstance(accessToken);
     }
 }

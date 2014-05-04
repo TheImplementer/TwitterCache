@@ -15,9 +15,12 @@ import static com.github.theimplementer.twittercache.auth.TwitterInstance.getIns
 class AccessTokenRetriever extends AsyncTask<String, Void, AccessToken> {
 
     private final TwitterSharedPreferences twitterPreferences;
+    private final AccessTokenUpdater accessTokenUpdater;
 
-    public AccessTokenRetriever(TwitterSharedPreferences twitterPreferences) {
+    public AccessTokenRetriever(TwitterSharedPreferences twitterPreferences,
+                                AccessTokenUpdater accessTokenUpdater) {
         this.twitterPreferences = twitterPreferences;
+        this.accessTokenUpdater = accessTokenUpdater;
     }
 
     @Override
@@ -35,5 +38,6 @@ class AccessTokenRetriever extends AsyncTask<String, Void, AccessToken> {
     @Override
     protected void onPostExecute(AccessToken accessToken) {
         twitterPreferences.setUserLoggedIn(accessToken.getToken(), accessToken.getTokenSecret());
+        accessTokenUpdater.updateAccessToken(accessToken);
     }
 }

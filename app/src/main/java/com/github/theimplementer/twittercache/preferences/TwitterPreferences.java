@@ -8,6 +8,6 @@ public interface TwitterPreferences {
     void setAccessToken(String accessToken);
     String getAccessToken();
     void setAccessTokenSecret(String accessTokenSecret);
-    String getAccessTokenString();
+    String getAccessTokenSecret();
 
 }

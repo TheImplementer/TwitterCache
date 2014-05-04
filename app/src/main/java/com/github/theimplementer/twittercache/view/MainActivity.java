@@ -10,20 +10,30 @@ import android.os.Bundle;
 import com.github.theimplementer.twittercache.R;
 import com.github.theimplementer.twittercache.preferences.TwitterSharedPreferences;
 
+import twitter4j.auth.AccessToken;
+
 import static com.github.theimplementer.twittercache.auth.TwitterInstance.TWITTER_CALLBACK_URL;
 import static com.github.theimplementer.twittercache.auth.TwitterInstance.TWITTER_OAUTH_VERIFIER;
+import static com.github.theimplementer.twittercache.auth.TwitterInstance.getInstance;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements AccessTokenUpdater {
+
+    private TwitterSharedPreferences twitterPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        twitterPreferences = new TwitterSharedPreferences(this);
 
         final Uri data = getIntent().getData();
         if (data != null && data.toString().startsWith(TWITTER_CALLBACK_URL)) {
             final String oauthVerifier = data.getQueryParameter(TWITTER_OAUTH_VERIFIER);
-            new AccessTokenRetriever(new TwitterSharedPreferences(this)).execute(oauthVerifier);
+            new AccessTokenRetriever(twitterPreferences, this).execute(oauthVerifier);
+        } else {
+            final String accessToken = twitterPreferences.getAccessToken();
+            final String accessTokenSecret = twitterPreferences.getAccessTokenSecret();
+            updateAccessToken(new AccessToken(accessToken, accessTokenSecret));
         }
 
         final FragmentManager fragmentManager = getFragmentManager();
@@ -35,4 +45,8 @@ public class MainActivity extends Activity {
         }
     }
 
+    @Override
+    public void updateAccessToken(AccessToken accessToken) {
+        getInstance().setAccessToken(accessToken);
+    }
 }
