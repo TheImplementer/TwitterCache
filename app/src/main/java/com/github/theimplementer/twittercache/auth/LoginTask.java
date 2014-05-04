@@ -1,72 +1,50 @@
 package com.github.theimplementer.twittercache.auth;
 
+import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.AsyncTask;
 
-import com.github.theimplementer.twittercache.preferences.TwitterPreferences;
-
-import twitter4j.Twitter;
 import twitter4j.TwitterException;
-import twitter4j.TwitterFactory;
 import twitter4j.auth.RequestToken;
-import twitter4j.conf.Configuration;
-import twitter4j.conf.ConfigurationBuilder;
 
-public class LoginTask extends AsyncTask<Void, Void, LoginResult> {
+import static android.content.Intent.ACTION_VIEW;
+import static android.net.Uri.parse;
+import static com.github.theimplementer.twittercache.auth.TwitterInstance.getInstance;
 
-    private static final String TWITTER_CONSUMER_KEY = "bJ6MYWxDscwN0AC4vs6IwpoF0";
-    private static final String TWITTER_CONSUMER_SECRET = "bAtwBczHSganT4ux6oCpxcMYIQpQ1gzvabVrdsWrDe0lA2mjU6";
-    private static final String TWITTER_CALLBACK_URL = "oauth://tcache";
+public class LoginTask extends AsyncTask<Void, Void, RequestToken> {
 
-    private final TwitterPreferences twitterPreferences;
     private final ConnectivityManager connectivityManager;
-    private final LoginObserver loginObserver;
+    private final Context context;
 
-    public LoginTask(TwitterPreferences twitterPreferences,
-                              ConnectivityManager connectivityManager,
-                              LoginObserver loginObserver) {
-        this.twitterPreferences = twitterPreferences;
+    public LoginTask(ConnectivityManager connectivityManager,
+                     Context context) {
         this.connectivityManager = connectivityManager;
-        this.loginObserver = loginObserver;
+        this.context = context;
     }
 
     @Override
-    protected LoginResult doInBackground(Void... voids) {
+    protected RequestToken doInBackground(Void... voids) {
         try {
-            login();
-        } catch (Throwable ex) {
-            return LoginResult.FAILURE;
+            return getRequestToken();
+        } catch (TwitterException ex) {
+            throw new RuntimeException(ex);
         }
-        return LoginResult.SUCCESS;
     }
 
     @Override
-    protected void onPostExecute(LoginResult loginResult) {
-        if (loginResult == LoginResult.SUCCESS) {
-            loginObserver.notifySuccess();
-        } else{
-            loginObserver.notifyFailure();
-        }
+    protected void onPostExecute(RequestToken requestToken) {
+        final Uri authenticationUrl = parse(requestToken.getAuthenticationURL());
+        final Intent intent = new Intent(ACTION_VIEW, authenticationUrl);
+        context.startActivity(intent);
     }
 
-    private void login() throws TwitterException {
+    private RequestToken getRequestToken() throws TwitterException {
         if (!isConnected()) throw new OfflineDeviceException();
 
-        if (twitterPreferences.isUserLoggedIn()) {
-            return;
-        }
-
-        final Configuration configuration = new ConfigurationBuilder().
-                setOAuthConsumerKey(TWITTER_CONSUMER_KEY).
-                setOAuthConsumerSecret(TWITTER_CONSUMER_SECRET).
-                build();
-
-        final Twitter twitter = new TwitterFactory(configuration).getInstance();
-        final RequestToken requestToken = twitter.getOAuthRequestToken(TWITTER_CALLBACK_URL);
-        twitterPreferences.setUserLoggedIn(requestToken.getToken(), requestToken.getTokenSecret());
-        twitterPreferences.setAccessToken(requestToken.getToken());
-        twitterPreferences.setAccessTokenSecret(requestToken.getTokenSecret());
+        return getInstance().getRequestToken();
     }
 
     private boolean isConnected() {

@@ -1,15 +1,21 @@
 package com.github.theimplementer.twittercache.auth;
 
+import android.content.Context;
+import android.content.Intent;
+
+import com.github.theimplementer.twittercache.view.MainActivity;
+
 public class FakeLoginHandler implements LoginHandler {
 
-    private LoginObserver loginObserver;
+    private final Context context;
 
-    public FakeLoginHandler(LoginObserver loginObserver) {
-        this.loginObserver = loginObserver;
+    public FakeLoginHandler(Context context) {
+        this.context = context;
     }
 
     @Override
     public void login() {
-        loginObserver.notifySuccess();
+        final Intent intent = new Intent(context, MainActivity.class);
+        context.startActivity(intent);
     }
 }

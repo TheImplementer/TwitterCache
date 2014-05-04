@@ -6,6 +6,7 @@ import android.app.Fragment;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,20 +14,19 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.github.theimplementer.twittercache.R;
-import com.github.theimplementer.twittercache.auth.FakeLoginHandler;
 import com.github.theimplementer.twittercache.auth.LoginHandler;
-import com.github.theimplementer.twittercache.auth.LoginObserver;
 import com.github.theimplementer.twittercache.auth.RemoteLoginHandler;
 import com.github.theimplementer.twittercache.preferences.TwitterSharedPreferences;
 
 import static android.content.Context.CONNECTIVITY_SERVICE;
 
 
-public class LoginFragment extends Fragment implements LoginObserver {
+public class LoginFragment extends Fragment {
 
     private Button loginButton;
     private LoginHandler loginHandler;
     private TwitterSharedPreferences twitterPreferences;
+    private ConnectivityManager connectivityManager;
 
     public LoginFragment() {
     }
@@ -38,9 +38,9 @@ public class LoginFragment extends Fragment implements LoginObserver {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        final ConnectivityManager connectivityManager = (ConnectivityManager) getActivity().getSystemService(CONNECTIVITY_SERVICE);
+        this.connectivityManager = (ConnectivityManager) getActivity().getSystemService(CONNECTIVITY_SERVICE);
         this.twitterPreferences = new TwitterSharedPreferences(getActivity());
-        this.loginHandler = new RemoteLoginHandler(twitterPreferences, connectivityManager, this);
+        this.loginHandler = new RemoteLoginHandler(connectivityManager, getActivity());
 //        this.loginHandler = new FakeLoginHandler(this);
     }
 
@@ -53,6 +53,10 @@ public class LoginFragment extends Fragment implements LoginObserver {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (!isConnected()) {
+                    displayErrorDialog(R.string.device_offline_message);
+                    return;
+                }
                 loginHandler.login();
             }
         });
@@ -63,20 +67,15 @@ public class LoginFragment extends Fragment implements LoginObserver {
     @Override
     public void onResume() {
         super.onResume();
-        if (twitterPreferences.isUserLoggedIn()) {
-            startActivity(new Intent(getActivity(), MainActivity.class));
+        if (!isConnected()) {
+            displayErrorDialog(R.string.device_offline_message);
+            return;
         }
-    }
 
-    @Override
-    public void notifySuccess() {
-        startActivity(new Intent(getActivity(), MainActivity.class));
-    }
-
-    @Override
-    public void notifyFailure() {
-        displayErrorDialog(R.string.login_error);
-        return;
+        if (twitterPreferences.isUserLoggedIn()) {
+            final Intent intent = new Intent(getActivity(), MainActivity.class);
+            startActivity(intent);
+        }
     }
 
     private void displayErrorDialog(int message) {
@@ -90,5 +89,10 @@ public class LoginFragment extends Fragment implements LoginObserver {
                     }
                 }).create();
         alertDialog.show();
+    }
+
+    private boolean isConnected() {
+        final NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnectedOrConnecting();
     }
 }

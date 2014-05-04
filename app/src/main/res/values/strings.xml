@@ -7,6 +7,7 @@
     <string name="ok">OK</string>
     <string name="connection_error_title">Error</string>
     <string name="login_error">An error occurred during the login process.</string>
+    <string name="device_offline_message">An internet connection is required by the application.</string>
     <string name="menu_logout">Logout</string>
 
 </resources>
