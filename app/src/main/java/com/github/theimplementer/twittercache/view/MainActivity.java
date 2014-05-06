@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -12,6 +13,10 @@ import com.github.theimplementer.twittercache.preferences.TwitterSharedPreferenc
 
 import twitter4j.auth.AccessToken;
 
+import static android.content.Intent.ACTION_MAIN;
+import static android.content.Intent.CATEGORY_HOME;
+import static android.content.Intent.FLAG_ACTIVITY_CLEAR_TOP;
+import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
 import static com.github.theimplementer.twittercache.TwitterInstance.TWITTER_CALLBACK_URL;
 import static com.github.theimplementer.twittercache.TwitterInstance.TWITTER_OAUTH_VERIFIER;
 import static com.github.theimplementer.twittercache.TwitterInstance.getInstance;
@@ -43,6 +48,14 @@ public class MainActivity extends Activity implements AccessTokenUpdater {
             fragmentTransaction.add(R.id.tweet_list_container, TweetListFragment.newInstance());
             fragmentTransaction.commit();
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        final Intent intent = new Intent(ACTION_MAIN);
+        intent.addCategory(CATEGORY_HOME);
+        intent.addFlags(FLAG_ACTIVITY_NEW_TASK | FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
     }
 
     @Override

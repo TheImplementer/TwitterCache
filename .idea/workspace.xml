@@ -23,14 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3499fbe1-6f80-4b72-b14d-908dac64c834" name="Default" comment="added class to manage twitter's application preferences">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/auth/TwitterInstance.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/TwitterInstance.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/Tweet.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/RemoteTweetsFetcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/AccessTokenRetriever.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/AccessTokenRetriever.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/auth/LoginTask.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/auth/LoginTask.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetFetchTask.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetFetchTask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetListFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetListFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TwitterCache.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -93,112 +86,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TweetFetchTask.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetFetchTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45454547" vertical-offset="195" max-vertical-offset="756">
-              <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#525#526#0" expanded="true" />
-                <element signature="e#567#568#0" expanded="true" />
-                <element signature="e#953#954#0" expanded="true" />
-                <element signature="e#990#991#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AsyncTask.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/os/AsyncTask.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="52" max-vertical-offset="1008">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TwitterInstance.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/TwitterInstance.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1134">
-              <caret line="0" column="46" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TweetListFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetListFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="1440">
-              <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="807" max-vertical-offset="1404">
+              <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#766#767#0" expanded="true" />
-                <element signature="e#832#833#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="65" max-vertical-offset="1044">
-              <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
-              <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
-              <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccessTokenRetriever.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/AccessTokenRetriever.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="299" max-vertical-offset="882">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RemoteTweetsFetcher.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/RemoteTweetsFetcher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-              <folding>
-                <element signature="e#249#250#0" expanded="true" />
-                <element signature="e#291#292#0" expanded="true" />
-                <element signature="e#332#333#0" expanded="true" />
-                <element signature="e#387#388#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginTask.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/auth/LoginTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="1080">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FakeLoginHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/auth/FakeLoginHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.77540106" vertical-offset="573" max-vertical-offset="1278">
+              <caret line="56" column="72" selection-start-line="56" selection-start-column="72" selection-end-line="56" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -923,10 +827,10 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/auth/TwitterInstance.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/auth/LoginTask.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/RemoteTweetsFetcher.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetListFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/AccessTokenRetriever.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetFetchTask.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetListFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -1871,7 +1775,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/auth/FakeLoginHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+        <state vertical-scroll-proportion="0.3529412" vertical-offset="0" max-vertical-offset="561">
           <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1881,7 +1785,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/auth/LoginTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="1080">
+        <state vertical-scroll-proportion="0.44919786" vertical-offset="18" max-vertical-offset="1080">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1891,7 +1795,7 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/os/AsyncTask.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="52" max-vertical-offset="1008">
+        <state vertical-scroll-proportion="0.33211678" vertical-offset="52" max-vertical-offset="1008">
           <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
           <folding />
         </state>
@@ -1909,7 +1813,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/RemoteTweetsFetcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414">
+        <state vertical-scroll-proportion="0.25668448" vertical-offset="0" max-vertical-offset="561">
           <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
           <folding>
             <element signature="e#249#250#0" expanded="true" />
@@ -1920,33 +1824,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="65" max-vertical-offset="1044">
-          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
-          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
-          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/AccessTokenRetriever.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="299" max-vertical-offset="882">
+        <state vertical-scroll-proportion="-0.18003565" vertical-offset="299" max-vertical-offset="882">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="1440">
-          <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1960,6 +1842,26 @@
             <element signature="e#567#568#0" expanded="true" />
             <element signature="e#953#954#0" expanded="true" />
             <element signature="e#990#991#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="807" max-vertical-offset="1404">
+          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.77540106" vertical-offset="573" max-vertical-offset="1278">
+          <caret line="56" column="72" selection-start-line="56" selection-start-column="72" selection-end-line="56" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
