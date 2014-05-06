@@ -2,7 +2,7 @@ package com.github.theimplementer.twittercache.view;
 
 import android.os.AsyncTask;
 
-import com.github.theimplementer.twittercache.auth.TwitterInstance;
+import com.github.theimplementer.twittercache.TwitterInstance;
 import com.github.theimplementer.twittercache.preferences.TwitterSharedPreferences;
 
 import twitter4j.Twitter;
@@ -10,7 +10,7 @@ import twitter4j.TwitterException;
 import twitter4j.auth.AccessToken;
 import twitter4j.auth.RequestToken;
 
-import static com.github.theimplementer.twittercache.auth.TwitterInstance.getInstance;
+import static com.github.theimplementer.twittercache.TwitterInstance.getInstance;
 
 class AccessTokenRetriever extends AsyncTask<String, Void, AccessToken> {
 

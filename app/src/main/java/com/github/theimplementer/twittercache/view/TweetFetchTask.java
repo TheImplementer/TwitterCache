@@ -2,18 +2,35 @@ package com.github.theimplementer.twittercache.view;
 
 import android.os.AsyncTask;
 
-import com.github.theimplementer.twittercache.preferences.TwitterPreferences;
+import com.github.theimplementer.twittercache.TwitterInstance;
 
-public class TweetFetchTask extends AsyncTask<Void, Void, Tweet> {
+import java.util.List;
 
-    private final TwitterPreferences preferences;
+import twitter4j.Twitter;
+import twitter4j.TwitterException;
 
-    public TweetFetchTask(TwitterPreferences preferences) {
-        this.preferences = preferences;
+import static com.github.theimplementer.twittercache.TwitterInstance.getInstance;
+
+public class TweetFetchTask extends AsyncTask<Void, Void, List<twitter4j.Status>> {
+
+    private final Updatable<twitter4j.Status> updatable;
+
+    public TweetFetchTask(Updatable<twitter4j.Status> updatable) {
+        this.updatable = updatable;
     }
 
     @Override
-    protected Tweet doInBackground(Void... params) {
-        return null;
+    protected List<twitter4j.Status> doInBackground(Void... params) {
+        final Twitter twitter = getInstance().getTwitter();
+        try {
+            return twitter.getHomeTimeline();
+        } catch (TwitterException ex) {
+            throw new RuntimeException(ex);
+        }
+    }
+
+    @Override
+    protected void onPostExecute(List<twitter4j.Status> tweets) {
+        updatable.add(tweets);
     }
 }

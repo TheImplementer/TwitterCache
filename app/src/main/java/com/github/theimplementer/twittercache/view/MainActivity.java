@@ -12,9 +12,9 @@ import com.github.theimplementer.twittercache.preferences.TwitterSharedPreferenc
 
 import twitter4j.auth.AccessToken;
 
-import static com.github.theimplementer.twittercache.auth.TwitterInstance.TWITTER_CALLBACK_URL;
-import static com.github.theimplementer.twittercache.auth.TwitterInstance.TWITTER_OAUTH_VERIFIER;
-import static com.github.theimplementer.twittercache.auth.TwitterInstance.getInstance;
+import static com.github.theimplementer.twittercache.TwitterInstance.TWITTER_CALLBACK_URL;
+import static com.github.theimplementer.twittercache.TwitterInstance.TWITTER_OAUTH_VERIFIER;
+import static com.github.theimplementer.twittercache.TwitterInstance.getInstance;
 
 public class MainActivity extends Activity implements AccessTokenUpdater {
 

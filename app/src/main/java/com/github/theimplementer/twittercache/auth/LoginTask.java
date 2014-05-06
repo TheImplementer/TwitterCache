@@ -12,7 +12,7 @@ import twitter4j.auth.RequestToken;
 
 import static android.content.Intent.ACTION_VIEW;
 import static android.net.Uri.parse;
-import static com.github.theimplementer.twittercache.auth.TwitterInstance.getInstance;
+import static com.github.theimplementer.twittercache.TwitterInstance.getInstance;
 
 public class LoginTask extends AsyncTask<Void, Void, RequestToken> {
 

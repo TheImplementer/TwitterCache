@@ -25,7 +25,7 @@ public class TweetListFragment extends ListFragment implements Updatable<Status>
     private TwitterSharedPreferences twitterPreferences;
 
     public TweetListFragment() {
-        this.tweetsFetcher = new FakeTweetsFetcher(this);
+        this.tweetsFetcher = new RemoteTweetsFetcher(this);
     }
 
     public static Fragment newInstance() {

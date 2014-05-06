@@ -1,4 +1,4 @@
-package com.github.theimplementer.twittercache.auth;
+package com.github.theimplementer.twittercache;
 
 import twitter4j.Twitter;
 import twitter4j.TwitterException;
