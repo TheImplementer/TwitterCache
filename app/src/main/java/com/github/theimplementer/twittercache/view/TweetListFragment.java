@@ -11,9 +11,9 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
 import com.github.theimplementer.twittercache.R;
-import com.github.theimplementer.twittercache.TwitterInstance;
 import com.github.theimplementer.twittercache.preferences.TwitterSharedPreferences;
 
 import java.util.List;
@@ -25,16 +25,23 @@ import static com.github.theimplementer.twittercache.TwitterInstance.getInstance
 
 public class TweetListFragment extends ListFragment implements Updatable<Status> {
 
+    private static final String ITEM_CLICK_LISTENER = "item_click_listener";
+
     private TweetsAdapter tweetsAdapter;
     private TweetsFetcher tweetsFetcher;
     private TwitterSharedPreferences twitterPreferences;
+    private TweetItemClickListener tweetItemClickListener;
 
     public TweetListFragment() {
         this.tweetsFetcher = new RemoteTweetsFetcher(this);
     }
 
-    public static Fragment newInstance() {
-        return new TweetListFragment();
+    public static Fragment newInstance(TweetItemClickListener tweetItemClickListener) {
+        final TweetListFragment fragment = new TweetListFragment();
+        final Bundle arguments = new Bundle();
+        arguments.putSerializable(ITEM_CLICK_LISTENER, tweetItemClickListener);
+        fragment.setArguments(arguments);
+        return fragment;
     }
 
     @Override
@@ -42,6 +49,7 @@ public class TweetListFragment extends ListFragment implements Updatable<Status>
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
         twitterPreferences = new TwitterSharedPreferences(getActivity());
+        tweetItemClickListener = (TweetItemClickListener) getArguments().getSerializable(ITEM_CLICK_LISTENER);
     }
 
     @Override
@@ -75,6 +83,12 @@ public class TweetListFragment extends ListFragment implements Updatable<Status>
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    @Override
+    public void onListItemClick(ListView l, View v, int position, long id) {
+        final Status tweet = (Status) getListAdapter().getItem(position);
+        tweetItemClickListener.displayDetailsFor(tweet);
     }
 
     public void add(List<Status> tweets) {

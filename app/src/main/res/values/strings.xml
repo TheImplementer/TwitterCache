@@ -9,5 +9,7 @@
     <string name="login_error">An error occurred during the login process.</string>
     <string name="device_offline_message">An internet connection is required by the application.</string>
     <string name="menu_logout">Logout</string>
+    <string name="retweet_count">Retweet Count:</string>
+    <string name="favourite_count">Favourited:</string>
 
 </resources>

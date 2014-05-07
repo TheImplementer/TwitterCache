@@ -9,8 +9,10 @@ import android.net.Uri;
 import android.os.Bundle;
 
 import com.github.theimplementer.twittercache.R;
+import com.github.theimplementer.twittercache.preferences.TwitterPreferences;
 import com.github.theimplementer.twittercache.preferences.TwitterSharedPreferences;
 
+import twitter4j.Status;
 import twitter4j.auth.AccessToken;
 
 import static android.content.Intent.ACTION_MAIN;
@@ -23,13 +25,11 @@ import static com.github.theimplementer.twittercache.TwitterInstance.getInstance
 
 public class MainActivity extends Activity implements AccessTokenUpdater {
 
-    private TwitterSharedPreferences twitterPreferences;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        twitterPreferences = new TwitterSharedPreferences(this);
+        final TwitterPreferences twitterPreferences = new TwitterSharedPreferences(this);
 
         final Uri data = getIntent().getData();
         if (data != null && data.toString().startsWith(TWITTER_CALLBACK_URL)) {
@@ -42,20 +42,35 @@ public class MainActivity extends Activity implements AccessTokenUpdater {
         }
 
         final FragmentManager fragmentManager = getFragmentManager();
-        final Fragment container = fragmentManager.findFragmentById(R.id.tweet_list_container);
+        final Fragment tweetsFragment = TweetListFragment.newInstance(new TweetItemClickListener() {
+            @Override
+            public void displayDetailsFor(Status status) {
+                final FragmentTransaction transaction = fragmentManager.beginTransaction();
+                transaction.replace(R.id.fragment_container, TweetDetailsFragment.newInstance(status));
+                transaction.addToBackStack(null);
+                transaction.commit();
+            }
+        });
+
+        final Fragment container = fragmentManager.findFragmentById(R.id.fragment_container);
         if (container == null) {
             final FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.add(R.id.tweet_list_container, TweetListFragment.newInstance());
+            fragmentTransaction.add(R.id.fragment_container, tweetsFragment);
             fragmentTransaction.commit();
         }
     }
 
     @Override
     public void onBackPressed() {
-        final Intent intent = new Intent(ACTION_MAIN);
-        intent.addCategory(CATEGORY_HOME);
-        intent.addFlags(FLAG_ACTIVITY_NEW_TASK | FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(intent);
+        final FragmentManager fragmentManager = getFragmentManager();
+        if (fragmentManager.getBackStackEntryCount() == 0) {
+            final Intent intent = new Intent(ACTION_MAIN);
+            intent.addCategory(CATEGORY_HOME);
+            intent.addFlags(FLAG_ACTIVITY_NEW_TASK | FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
+        } else {
+            fragmentManager.popBackStack();
+        }
     }
 
     @Override
