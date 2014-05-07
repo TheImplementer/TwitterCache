@@ -56,4 +56,8 @@ public class TwitterInstance {
     public void setAccessToken(AccessToken accessToken) {
         this.twitter = twitterFactory.getInstance(accessToken);
     }
+
+    public void resetInstance() {
+        instance = new TwitterInstance();
+    }
 }

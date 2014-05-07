@@ -12,11 +12,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.github.theimplementer.twittercache.R;
+import com.github.theimplementer.twittercache.TwitterInstance;
 import com.github.theimplementer.twittercache.preferences.TwitterSharedPreferences;
 
 import java.util.List;
 
 import twitter4j.Status;
+
+import static com.github.theimplementer.twittercache.TwitterInstance.getInstance;
 
 public class TweetListFragment extends ListFragment implements Updatable<Status> {
 
@@ -62,6 +65,7 @@ public class TweetListFragment extends ListFragment implements Updatable<Status>
         switch (item.getItemId()) {
             case R.id.logout:
                 twitterPreferences.setUserLoggedOut();
+                getInstance().resetInstance();
                 getActivity().finish();
                 return true;
             default:
