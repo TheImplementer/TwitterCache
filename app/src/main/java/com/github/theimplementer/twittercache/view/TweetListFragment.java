@@ -3,6 +3,7 @@ package com.github.theimplementer.twittercache.view;
 
 import android.app.Fragment;
 import android.app.ListFragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -19,6 +20,7 @@ import java.util.List;
 
 import twitter4j.Status;
 
+import static android.content.Intent.FLAG_ACTIVITY_CLEAR_TOP;
 import static com.github.theimplementer.twittercache.TwitterInstance.getInstance;
 
 public class TweetListFragment extends ListFragment implements Updatable<Status> {
@@ -66,7 +68,9 @@ public class TweetListFragment extends ListFragment implements Updatable<Status>
             case R.id.logout:
                 twitterPreferences.setUserLoggedOut();
                 getInstance().resetInstance();
-                getActivity().finish();
+                final Intent intent = new Intent(getActivity(), LoginActivity.class);
+                intent.addFlags(FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
