@@ -10,6 +10,9 @@ import android.widget.TextView;
 import com.github.theimplementer.twittercache.R;
 
 import java.text.SimpleDateFormat;
+import java.util.Collection;
+import java.util.LinkedList;
+import java.util.List;
 
 import twitter4j.Status;
 import twitter4j.User;
@@ -47,5 +50,15 @@ public class TweetsAdapter extends ArrayAdapter<Status> {
         tweetContent.setText(status.getText());
 
         return view;
+    }
+
+    @Override
+    public void addAll(Collection<? extends Status> collection) {
+        final List<Status> statuses = new LinkedList<Status>(collection);
+        for (int count = 0; count < getCount(); count++) {
+            statuses.add(getItem(count));
+        }
+        clear();
+        super.addAll(collection);
     }
 }
