@@ -53,14 +53,13 @@ public class MainActivity extends Activity implements AccessTokenUpdater, TweetI
 
     @Override
     public void onBackPressed() {
-        final FragmentManager fragmentManager = getFragmentManager();
-        if (fragmentManager.getBackStackEntryCount() == 0) {
+        if (getFragmentManager().getBackStackEntryCount() == 0) {
             final Intent intent = new Intent(ACTION_MAIN);
             intent.addCategory(CATEGORY_HOME);
             intent.addFlags(FLAG_ACTIVITY_NEW_TASK | FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         } else {
-            fragmentManager.popBackStack();
+            super.onBackPressed();
         }
     }
 
