@@ -23,14 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3499fbe1-6f80-4b72-b14d-908dac64c834" name="Default" comment="added class to manage twitter's application preferences">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetDetailsFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetItemClickListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tweet_details.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/AccessTokenRetriever.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/AccessTokenRetriever.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetListFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetListFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/twitter4j_core_4_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/twitter4j_core_4_0_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TwitterCache.iws" />
@@ -94,12 +89,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TweetListFragment.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TweetListFragment.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetListFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="753" max-vertical-offset="1476">
-              <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
-              <folding />
+            <state vertical-scroll-proportion="0.5438067" vertical-offset="270" max-vertical-offset="1908">
+              <caret line="47" column="65" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1172#1173#0" expanded="true" />
+                <element signature="e#1218#1219#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,12 +106,9 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="537" max-vertical-offset="1170">
-              <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
-              <folding>
-                <element signature="e#2081#2500#0" expanded="true" />
-                <element signature="e#2489#2490#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="177" max-vertical-offset="1170">
+              <caret line="44" column="64" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -120,7 +116,7 @@
       <file leaf-file-name="AccessTokenRetriever.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/AccessTokenRetriever.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="882">
+            <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="882">
               <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
@@ -130,8 +126,8 @@
       <file leaf-file-name="TwitterSharedPreferences.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/preferences/TwitterSharedPreferences.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1206">
-              <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="1314">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -140,8 +136,8 @@
       <file leaf-file-name="TwitterPreferences.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/preferences/TwitterPreferences.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
-              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="342">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -150,33 +146,21 @@
       <file leaf-file-name="TweetItemClickListener.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetItemClickListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+            <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="270">
               <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TweetDetailsFragment.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TweetDetailsFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetDetailsFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5828877" vertical-offset="627" max-vertical-offset="1242">
-              <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="249" max-vertical-offset="1242">
+              <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Status.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ideaLibSources/twitter4j-core-4.0.1-sources.jar!/twitter4j/Status.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1959" max-vertical-offset="3546">
-              <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -596,7 +580,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4194375196084" />
+        <entry key="$PROJECT_DIR$" value="4198709249236" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -761,86 +745,86 @@
               <option name="name" value="app" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/jetty" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/antlr" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/open-api" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/build-comparison" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/signing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/sonar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/resources" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/ui" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/announce" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/maven" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/base-services-groovy" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/language-jvm" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/base-services" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/cli" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/osgi" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/ivy" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/diagnostics" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/ide" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/native" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/launcher" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/sonar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/base-services" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/cpp" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/core-impl" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/wrapper" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/tooling-api" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/code-quality" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/build-init" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/resources" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/open-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/build-comparison" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/announce" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/javascript" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/publish" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/internal-integ-testing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/jacoco" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/plugins" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/reporting" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/internal-testing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/messaging" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/ear" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/base-services-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/tooling-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/osgi" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/jacoco" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/ivy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/language-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/maven" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/wrapper" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/internal-integ-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/core-impl" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/code-quality" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/ide" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/language-base" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/publish" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/messaging" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/scala" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/native" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/groovy-all-1.8.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/build-init" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/ear" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/cli" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/signing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/ui" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/jetty" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/antlr" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/diagnostics" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/src/plugins" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/gradle-core-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/gradle-base-services-groovy-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/gradle-cli-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/gradle-tooling-api-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/gradle-ui-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/gradle-base-services-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/gradle-launcher-1.10.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/ant-launcher-1.9.2.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/gradle-native-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/ivy-2.2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/gradle-open-api-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/groovy-all-1.8.6.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/gradle-resources-1.10.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/gradle-wrapper-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/gradle-cli-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/gradle-base-services-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/gradle-tooling-api-1.10.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/gradle-messaging-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/gradle-launcher-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/gradle-base-services-groovy-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/gradle-docs-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/gradle-core-1.10.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/ant-1.9.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/gradle-open-api-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/gradle-ui-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-ivy-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-signing-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-osgi-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-scala-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-core-impl-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-maven-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-ear-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-reporting-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-build-init-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-cpp-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-language-base-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-ide-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/gradle-docs-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/ivy-2.2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-diagnostics-1.10.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-publish-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-code-quality-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/ant-antlr-1.9.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-plugins-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-jacoco-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-ide-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-sonar-1.10.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-language-jvm-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-antlr-1.10.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-announce-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/ant-antlr-1.9.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-core-impl-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-antlr-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-plugins-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-signing-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-code-quality-1.10.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-jetty-1.10.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-javascript-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-diagnostics-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-ear-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-maven-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-reporting-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-language-base-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-scala-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-cpp-1.10.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-build-comparison-1.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-sonar-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-osgi-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-ivy-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-jacoco-1.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.10-all/6vpvhqu0efs1fqmqr2decq1v12/gradle-1.10/lib/plugins/gradle-build-init-1.10.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -898,20 +882,20 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/tweet_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetsAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/DetailsClickListener.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetListFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/AccessTokenRetriever.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/tweet_details.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/preferences/TwitterPreferences.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetDetailsFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetListFragment.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="27" />
+    <option name="y" value="24" />
     <option name="width" value="1920" />
-    <option name="height" value="1026" />
+    <option name="height" value="1152" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -961,6 +945,17 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TwitterCache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -981,241 +976,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="TwitterCache" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwitterCache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwitterCache" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwitterCache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwitterCache" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwitterCache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwitterCache" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwitterCache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwitterCache" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwitterCache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwitterCache" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="twittercache" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwitterCache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwitterCache" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="twittercache" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwitterCache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwitterCache" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="twittercache" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="preferences" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwitterCache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwitterCache" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="twittercache" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auth" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwitterCache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1451,36 +1211,36 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1026" extended-state="6" />
+    <frame x="0" y="24" width="1920" height="1152" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39954337" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990867" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32648402" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32762557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32551318" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32746822" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24760383" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24713244" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1548,10 +1308,127 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/auth/OfflineDeviceException.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetListFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04245283" vertical-offset="0" max-vertical-offset="848">
-          <caret line="2" column="61" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1872">
+          <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1172#1173#0" expanded="true" />
+            <element signature="e#1218#1219#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1440" max-vertical-offset="1548">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/AccessTokenRetriever.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="882">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/preferences/TwitterSharedPreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="1314">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/preferences/TwitterPreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="342">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetItemClickListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="270">
+          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetDetailsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="507" max-vertical-offset="1242">
+          <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1872">
+          <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1172#1173#0" expanded="true" />
+            <element signature="e#1218#1219#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="576">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/AccessTokenRetriever.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="882">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/preferences/TwitterSharedPreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="1134">
+          <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/preferences/TwitterPreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="306">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetItemClickListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="270">
+          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetDetailsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="627" max-vertical-offset="1242">
+          <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1562,35 +1439,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08769793" vertical-offset="0" max-vertical-offset="821">
           <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/app/Fragment.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.2304833" vertical-offset="0" max-vertical-offset="3150">
-          <caret line="101" column="46" selection-start-line="101" selection-start-column="38" selection-end-line="101" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/app/ListFragment.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17708333" vertical-offset="0" max-vertical-offset="680">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/auth/LoginHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1608,60 +1456,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/twitter4j-core-4.0.1-sources.jar!/twitter4j/JSONObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3279858" vertical-offset="20693" max-vertical-offset="22356">
-          <caret line="1221" column="28" selection-start-line="1221" selection-start-column="28" selection-end-line="1221" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/twitter4j-core-4.0.1-sources.jar!/twitter4j/TwitterResponseImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="47" max-vertical-offset="792">
-          <caret line="27" column="61" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/twitter4j-core-4.0.1-sources.jar!/twitter4j/json/DataObjectFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23349057" vertical-offset="0" max-vertical-offset="4176">
-          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/twitter4j-core-4.0.1-sources.jar!/twitter4j/ParseUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="3474">
-          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetsFetcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/auth/LoginObserver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/LoginFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.828877" vertical-offset="0" max-vertical-offset="1530">
           <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
-          <folding>
-            <element signature="e#1890#2204#0" expanded="false" />
-            <element signature="e#2063#2094#0" expanded="false" />
-            <element signature="e#2193#2194#0" expanded="false" />
-            <element signature="e#2366#2397#0" expanded="false" />
-            <element signature="e#2873#2904#0" expanded="false" />
-            <element signature="e#2940#2951#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1680,225 +1478,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/FakeTweetsFetcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.037433155" vertical-offset="177" max-vertical-offset="738">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#734#742#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/auth/RemoteLoginHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28877005" vertical-offset="0" max-vertical-offset="561">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/twitter4j-core-4.0.1-sources.jar!/twitter4j/ResponseList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38502672" vertical-offset="0" max-vertical-offset="561">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/auth/FakeLoginHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3529412" vertical-offset="0" max-vertical-offset="561">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/auth/LoginTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44919786" vertical-offset="18" max-vertical-offset="1080">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/os/AsyncTask.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33211678" vertical-offset="52" max-vertical-offset="1008">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/RemoteTweetsFetcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25668448" vertical-offset="0" max-vertical-offset="561">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding>
-            <element signature="e#249#250#0" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/TwitterInstance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="358" max-vertical-offset="1206">
-          <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1947#1948#0" expanded="false" />
-            <element signature="e#1995#1996#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/tweet_item.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.333333" vertical-offset="0" max-vertical-offset="522">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/AccessTokenUpdater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16042781" vertical-offset="0" max-vertical-offset="561">
-          <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/Updatable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12834224" vertical-offset="0" max-vertical-offset="561">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/widget/Adapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16042781" vertical-offset="0" max-vertical-offset="612">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/widget/ListAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16042781" vertical-offset="0" max-vertical-offset="561">
-          <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/widget/BaseAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16042781" vertical-offset="0" max-vertical-offset="630">
-          <caret line="6" column="63" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/widget/ArrayAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16423358" vertical-offset="0" max-vertical-offset="1098">
-          <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetsAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="900">
-          <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
-          <folding>
-            <element signature="e#1963#1971#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/twitter4j-core-4.0.1-sources.jar!/twitter4j/Paging.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.805704" vertical-offset="2405" max-vertical-offset="4194">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/twitter4j-core-4.0.1-sources.jar!/twitter4j/api/TimelinesResources.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06934307" vertical-offset="2572" max-vertical-offset="3168">
-          <caret line="162" column="44" selection-start-line="162" selection-start-column="44" selection-end-line="162" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetFetchTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
           <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/java/io/Serializable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16042781" vertical-offset="0" max-vertical-offset="561">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/twitter4j-core-4.0.1-sources.jar!/twitter4j/StatusJSONImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.9304814" vertical-offset="0" max-vertical-offset="8118">
-          <caret line="237" column="16" selection-start-line="237" selection-start-column="16" selection-end-line="237" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/twitter4j-core-4.0.1-sources.jar!/twitter4j/TwitterResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.047445256" vertical-offset="190" max-vertical-offset="738">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/twitter4j-core-4.0.1-sources.jar!/twitter4j/EntitySupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19786096" vertical-offset="15" max-vertical-offset="954">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/content/SharedPreferences.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16042781" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/preferences/TwitterSharedPreferences.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1206">
-          <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="753" max-vertical-offset="1476">
-          <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="1314">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1907,7 +1497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
           <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1918,18 +1507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.247191" vertical-offset="0" max-vertical-offset="1116">
           <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
-          <folding>
-            <element signature="e#1315#1338#0" expanded="true" />
-            <element signature="e#1925#1950#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/twitter4j-core-4.0.1-sources.jar!/twitter4j/Status.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="69" max-vertical-offset="3546">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1937,9 +1514,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
           <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1953,29 +1528,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/preferences/TwitterPreferences.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="342">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="537" max-vertical-offset="1170">
-          <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
-          <folding>
-            <element signature="e#2081#2500#0" expanded="true" />
-            <element signature="e#2489#2490#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetDetailsFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5828877" vertical-offset="627" max-vertical-offset="1242">
-          <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="249" max-vertical-offset="1242">
+          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="177" max-vertical-offset="1170">
+          <caret line="44" column="64" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/theimplementer/twittercache/view/TweetListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5438067" vertical-offset="270" max-vertical-offset="1908">
+          <caret line="47" column="65" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1172#1173#0" expanded="true" />
+            <element signature="e#1218#1219#0" expanded="true" />
           </folding>
         </state>
       </provider>

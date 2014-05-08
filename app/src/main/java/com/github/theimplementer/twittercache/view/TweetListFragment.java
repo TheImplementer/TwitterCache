@@ -1,6 +1,7 @@
 package com.github.theimplementer.twittercache.view;
 
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.app.ListFragment;
 import android.content.Intent;
@@ -25,8 +26,6 @@ import static com.github.theimplementer.twittercache.TwitterInstance.getInstance
 
 public class TweetListFragment extends ListFragment implements Updatable<Status> {
 
-    private static final String ITEM_CLICK_LISTENER = "item_click_listener";
-
     private TweetsAdapter tweetsAdapter;
     private TweetsFetcher tweetsFetcher;
     private TwitterSharedPreferences twitterPreferences;
@@ -36,12 +35,18 @@ public class TweetListFragment extends ListFragment implements Updatable<Status>
         this.tweetsFetcher = new RemoteTweetsFetcher(this);
     }
 
-    public static Fragment newInstance(TweetItemClickListener tweetItemClickListener) {
-        final TweetListFragment fragment = new TweetListFragment();
-        final Bundle arguments = new Bundle();
-        arguments.putSerializable(ITEM_CLICK_LISTENER, tweetItemClickListener);
-        fragment.setArguments(arguments);
-        return fragment;
+    public static Fragment newInstance() {
+        return new TweetListFragment();
+    }
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        if (activity instanceof TweetItemClickListener) {
+            tweetItemClickListener = (TweetItemClickListener) activity;
+        } else {
+            throw new RuntimeException("The hosting activity must implement the TweetItemClickListener interface.");
+        }
     }
 
     @Override
@@ -49,7 +54,6 @@ public class TweetListFragment extends ListFragment implements Updatable<Status>
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
         twitterPreferences = new TwitterSharedPreferences(getActivity());
-        tweetItemClickListener = (TweetItemClickListener) getArguments().getSerializable(ITEM_CLICK_LISTENER);
     }
 
     @Override

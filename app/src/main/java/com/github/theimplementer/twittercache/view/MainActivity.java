@@ -23,7 +23,7 @@ import static com.github.theimplementer.twittercache.TwitterInstance.TWITTER_CAL
 import static com.github.theimplementer.twittercache.TwitterInstance.TWITTER_OAUTH_VERIFIER;
 import static com.github.theimplementer.twittercache.TwitterInstance.getInstance;
 
-public class MainActivity extends Activity implements AccessTokenUpdater {
+public class MainActivity extends Activity implements AccessTokenUpdater, TweetItemClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,16 +42,7 @@ public class MainActivity extends Activity implements AccessTokenUpdater {
         }
 
         final FragmentManager fragmentManager = getFragmentManager();
-        final Fragment tweetsFragment = TweetListFragment.newInstance(new TweetItemClickListener() {
-            @Override
-            public void displayDetailsFor(Status status) {
-                final FragmentTransaction transaction = fragmentManager.beginTransaction();
-                transaction.replace(R.id.fragment_container, TweetDetailsFragment.newInstance(status));
-                transaction.addToBackStack(null);
-                transaction.commit();
-            }
-        });
-
+        final Fragment tweetsFragment = TweetListFragment.newInstance();
         final Fragment container = fragmentManager.findFragmentById(R.id.fragment_container);
         if (container == null) {
             final FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -76,5 +67,14 @@ public class MainActivity extends Activity implements AccessTokenUpdater {
     @Override
     public void updateAccessToken(AccessToken accessToken) {
         getInstance().setAccessToken(accessToken);
+    }
+
+    @Override
+    public void displayDetailsFor(Status status) {
+        final FragmentManager fragmentManager = getFragmentManager();
+        final FragmentTransaction transaction = fragmentManager.beginTransaction();
+        transaction.replace(R.id.fragment_container, TweetDetailsFragment.newInstance(status));
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
 }
