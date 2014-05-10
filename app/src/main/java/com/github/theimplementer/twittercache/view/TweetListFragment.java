@@ -58,7 +58,7 @@ public class TweetListFragment extends ListFragment implements Updatable<Status>
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        tweetsAdapter = new TweetsAdapter(getActivity(), android.R.layout.simple_list_item_1);
+        tweetsAdapter = new TweetsAdapter(getActivity());
         setListAdapter(tweetsAdapter);
         return super.onCreateView(inflater, container, savedInstanceState);
     }
@@ -96,7 +96,7 @@ public class TweetListFragment extends ListFragment implements Updatable<Status>
     }
 
     public void add(List<Status> tweets) {
-        tweetsAdapter.addAll(tweets);
+        tweetsAdapter.addTweets(tweets);
         tweetsAdapter.notifyDataSetChanged();
     }
 }
