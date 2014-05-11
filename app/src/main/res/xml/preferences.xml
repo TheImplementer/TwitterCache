@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:key="pref_tweets_cache_size"
+        android:title="Cache size"
+        android:summary="Number of tweets to downlaod when the application is started"
+        android:defaultValue="10" />
+
+</PreferenceScreen>

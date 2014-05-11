@@ -11,6 +11,7 @@ public class TwitterSharedPreferences implements TwitterPreferences {
     private static final String USER_LOGGED_IN = "user_logged_in";
     private static final String TWITTER_ACCESS_TOKEN = "access_token";
     private static final String TWITTER_ACCESS_TOKEN_SECRET = "access_token_secret";
+    private static final String PREF_TWEETS_CACHE_SIZE = "pref_tweets_cache_size";
 
     private final SharedPreferences sharedPreferences;
 
@@ -63,5 +64,10 @@ public class TwitterSharedPreferences implements TwitterPreferences {
     @Override
     public String getAccessTokenSecret() {
         return sharedPreferences.getString(TWITTER_ACCESS_TOKEN_SECRET, null);
+    }
+
+    @Override
+    public int getTweetsCacheSize() {
+        return sharedPreferences.getInt(PREF_TWEETS_CACHE_SIZE, 10);
     }
 }

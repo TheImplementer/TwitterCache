@@ -11,7 +11,7 @@ public class RemoteTweetsFetcher implements TweetsFetcher {
     }
 
     @Override
-    public void fetch() {
-        new TweetFetchTask(updatable).execute();
+    public void fetch(int tweetsCacheSize) {
+        new TweetFetchTask(updatable).execute(tweetsCacheSize);
     }
 }

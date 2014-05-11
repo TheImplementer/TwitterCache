@@ -7,6 +7,7 @@ import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 
 import com.github.theimplementer.twittercache.R;
 import com.github.theimplementer.twittercache.preferences.TwitterPreferences;
@@ -29,6 +30,7 @@ public class MainActivity extends Activity implements AccessTokenUpdater, TweetI
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        PreferenceManager.setDefaultValues(getApplicationContext(), R.xml.preferences, false);
         final TwitterPreferences twitterPreferences = new TwitterSharedPreferences(this);
 
         final Uri data = getIntent().getData();
@@ -42,11 +44,10 @@ public class MainActivity extends Activity implements AccessTokenUpdater, TweetI
         }
 
         final FragmentManager fragmentManager = getFragmentManager();
-        final Fragment tweetsFragment = TweetListFragment.newInstance();
         final Fragment container = fragmentManager.findFragmentById(R.id.fragment_container);
         if (container == null) {
             final FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.add(R.id.fragment_container, tweetsFragment);
+            fragmentTransaction.add(R.id.fragment_container, TweetListFragment.newInstance());
             fragmentTransaction.commit();
         }
     }

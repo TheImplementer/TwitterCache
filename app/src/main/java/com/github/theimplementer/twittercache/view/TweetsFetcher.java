@@ -1,5 +1,5 @@
 package com.github.theimplementer.twittercache.view;
 
 public interface TweetsFetcher {
-    void fetch();
+    void fetch(int tweetsCacheSize);
 }

@@ -11,5 +11,6 @@
     <string name="menu_logout">Logout</string>
     <string name="retweet_count">Retweet Count:</string>
     <string name="favourite_count">Favourited:</string>
+    <string name="menu_settings">Settings</string>
 
 </resources>

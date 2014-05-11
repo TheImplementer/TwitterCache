@@ -20,7 +20,7 @@ public class FakeTweetsFetcher implements TweetsFetcher {
     }
 
     @Override
-    public void fetch() {
+    public void fetch(int tweetsCacheSize) {
         updatable.add(FAKE_TWEETS);
     }
 

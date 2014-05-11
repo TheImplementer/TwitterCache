@@ -66,7 +66,7 @@ public class TweetListFragment extends ListFragment implements Updatable<Status>
     @Override
     public void onStart() {
         super.onStart();
-        tweetsFetcher.fetch();
+        tweetsFetcher.fetch(twitterPreferences.getTweetsCacheSize());
     }
 
     @Override
@@ -80,9 +80,13 @@ public class TweetListFragment extends ListFragment implements Updatable<Status>
             case R.id.logout:
                 twitterPreferences.setUserLoggedOut();
                 getInstance().resetInstance();
-                final Intent intent = new Intent(getActivity(), LoginActivity.class);
-                intent.addFlags(FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+                final Intent loginIntent = new Intent(getActivity(), LoginActivity.class);
+                loginIntent.addFlags(FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(loginIntent);
+                return true;
+            case R.id.settings:
+                final Intent settingsIntent = new Intent(getActivity(), SettingsActivity.class);
+                startActivity(settingsIntent);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

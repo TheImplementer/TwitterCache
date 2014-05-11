@@ -9,5 +9,6 @@ public interface TwitterPreferences {
     String getAccessToken();
     void setAccessTokenSecret(String accessTokenSecret);
     String getAccessTokenSecret();
+    int getTweetsCacheSize();
 
 }
