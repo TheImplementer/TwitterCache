@@ -36,7 +36,7 @@ public class TweetsAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return 0;
+        return tweets.size();
     }
 
     @Override
