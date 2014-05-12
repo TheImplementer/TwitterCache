@@ -28,9 +28,9 @@ public class TweetFetchTask extends AsyncTask<Integer, Void, List<twitter4j.Stat
         int numberOfTweets = params[0];
         final ArrayList<twitter4j.Status> tweets = new ArrayList<twitter4j.Status>();
         for (int tweetCount = 0; tweetCount < numberOfTweets; tweetCount += DEFAULT_PAGE_SIZE) {
-            tweets.addAll(getTweetsUsing(new Paging(tweetCount / DEFAULT_PAGE_SIZE, DEFAULT_PAGE_SIZE)));
+            tweets.addAll(getTweetsUsing(new Paging(tweetCount / DEFAULT_PAGE_SIZE + 1, DEFAULT_PAGE_SIZE)));
             if ((tweetCount + DEFAULT_PAGE_SIZE >= numberOfTweets)) {
-                tweets.addAll(getTweetsUsing(new Paging(tweetCount / DEFAULT_PAGE_SIZE + 1, numberOfTweets - tweetCount)));
+                tweets.addAll(getTweetsUsing(new Paging(tweetCount / DEFAULT_PAGE_SIZE + 2, numberOfTweets - tweetCount)));
             }
         }
         return tweets;
